@@ -1,6 +1,10 @@
 FROM node:latest
+
 WORKDIR /usr/app/
+
+COPY package.json .
+RUN npm install
+
 COPY . .
-RUN npm i
+
 EXPOSE 5001
-CMD ["node","serveFE.js"]
