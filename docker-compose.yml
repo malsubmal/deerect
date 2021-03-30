@@ -41,7 +41,7 @@ services:
       build: 
         context: ./server-s
       ports:
-        - "5000:5000"
+        - "5003:5003"
   vidu-kms:
      build:
       context: ./opt/openvidu

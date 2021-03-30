@@ -40,7 +40,7 @@ var options = {
     key: fs.readFileSync('openvidukey.pem'),
     cert: fs.readFileSync('openviducert.pem')
 };
-https.createServer(options, app).listen(5000);
+https.createServer(options, app).listen(5003);
 
 
 
@@ -57,7 +57,7 @@ var mapSessions = {};
 // Collection to pair session names with tokens
 var mapSessionNamesTokens = {};
 
-console.log("OpenVidu-backend listening on port 5000");
+console.log("OpenVidu-backend listening on port 5003");
 
 /* CONFIGURATION */
 
