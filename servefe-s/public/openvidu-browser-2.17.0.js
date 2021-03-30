@@ -2187,23 +2187,23 @@ Object.defineProperty(exports, "parse", {
   }
 });
 
-var _v = _interopRequireDefault(require("./v1.js"));
+var _v = _interopRequireDefault(require("./v1.js.js"));
 
-var _v2 = _interopRequireDefault(require("./v3.js"));
+var _v2 = _interopRequireDefault(require("./v3.js.js"));
 
-var _v3 = _interopRequireDefault(require("./v4.js"));
+var _v3 = _interopRequireDefault(require("./v4.js.js"));
 
-var _v4 = _interopRequireDefault(require("./v5.js"));
+var _v4 = _interopRequireDefault(require("./v5.js.js"));
 
-var _nil = _interopRequireDefault(require("./nil.js"));
+var _nil = _interopRequireDefault(require("./nil.js.js"));
 
-var _version = _interopRequireDefault(require("./version.js"));
+var _version = _interopRequireDefault(require("./version.js.js"));
 
-var _validate = _interopRequireDefault(require("./validate.js"));
+var _validate = _interopRequireDefault(require("./validate.js.js"));
 
-var _stringify = _interopRequireDefault(require("./stringify.js"));
+var _stringify = _interopRequireDefault(require("./stringify.js.js"));
 
-var _parse = _interopRequireDefault(require("./parse.js"));
+var _parse = _interopRequireDefault(require("./parse.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 },{"./nil.js":11,"./parse.js":12,"./stringify.js":16,"./v1.js":17,"./v3.js":18,"./v4.js":20,"./v5.js":21,"./validate.js":22,"./version.js":23}],10:[function(require,module,exports){
@@ -2447,7 +2447,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _validate = _interopRequireDefault(require("./validate.js"));
+var _validate = _interopRequireDefault(require("./validate.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2629,7 +2629,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _validate = _interopRequireDefault(require("./validate.js"));
+var _validate = _interopRequireDefault(require("./validate.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2669,9 +2669,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _rng = _interopRequireDefault(require("./rng.js"));
+var _rng = _interopRequireDefault(require("./rng.js.js"));
 
-var _stringify = _interopRequireDefault(require("./stringify.js"));
+var _stringify = _interopRequireDefault(require("./stringify.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2777,9 +2777,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _v = _interopRequireDefault(require("./v35.js"));
+var _v = _interopRequireDefault(require("./v35.js.js"));
 
-var _md = _interopRequireDefault(require("./md5.js"));
+var _md = _interopRequireDefault(require("./md5.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2795,9 +2795,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = _default;
 exports.URL = exports.DNS = void 0;
 
-var _stringify = _interopRequireDefault(require("./stringify.js"));
+var _stringify = _interopRequireDefault(require("./stringify.js.js"));
 
-var _parse = _interopRequireDefault(require("./parse.js"));
+var _parse = _interopRequireDefault(require("./parse.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2873,9 +2873,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _rng = _interopRequireDefault(require("./rng.js"));
+var _rng = _interopRequireDefault(require("./rng.js.js"));
 
-var _stringify = _interopRequireDefault(require("./stringify.js"));
+var _stringify = _interopRequireDefault(require("./stringify.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2911,9 +2911,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _v = _interopRequireDefault(require("./v35.js"));
+var _v = _interopRequireDefault(require("./v35.js.js"));
 
-var _sha = _interopRequireDefault(require("./sha1.js"));
+var _sha = _interopRequireDefault(require("./sha1.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2928,7 +2928,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _regex = _interopRequireDefault(require("./regex.js"));
+var _regex = _interopRequireDefault(require("./regex.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2946,7 +2946,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _validate = _interopRequireDefault(require("./validate.js"));
+var _validate = _interopRequireDefault(require("./validate.js.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

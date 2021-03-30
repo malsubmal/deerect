@@ -17,6 +17,36 @@ services:
       - "8443:8443"
       - "127.0.0.1:8001:8001"
       - "127.0.0.1:8444:8444"
+    depends_on: 
+    - login
+    - servefe
+    - server-vidu
+  login:
+    volumes:
+      - ./login-s/:/usr/app/
+    build: 
+      context: ./login-s
+    ports:
+      - "5002:5002"
+  servefe:
+      volumes:
+        - ./servefe-s/:/usr/app/
+      build: 
+        context: ./servefe-s
+      ports:
+        - "5001:5001"
+  server-vidu:
+      volumes:
+        - ./server-s/:/usr/app/
+      build: 
+        context: ./server-s
+      ports:
+        - "5000:5000"
+  vidu-kms:
+     build:
+      context: ./opt/openvidu
+
+
 #  server: 
 #    image: "openvidu/openvidu-server-kms:2.17.0"    
 #    ports:
