@@ -1,16 +1,33 @@
 version: "3.9"  # optional since v1.27.0
 services:
-  server: 
-    image: "openvidu/openvidu-server-kms:2.17.0"    
+  kong:
+    image: kong:latest
+    volumes:
+      - ./kong.yml:/usr/local/kong/declarative/kong.yml
+    environment: 
+      - KONG_DATABASE=off
+      - KONG_DECLARATIVE_CONFIG=/usr/local/kong/declarative/kong.yml
+      - KONG_PROXY_ACCESS_LOG=/dev/stdout 
+      - KONG_ADMIN_ACCESS_LOG=/dev/stdout  
+      - KONG_PROXY_ERROR_LOG=/dev/stderr   
+      - KONG_ADMIN_ERROR_LOG=/dev/stderr  
+      - KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl
     ports:
-      - "4443:4443"
-    environment:
-      - "OPENVIDU_SECRET=MY_SECRET"
-  web:
-    build: .
-    ports:
-      - "5000:5000"
-    depends_on: 
-      - server  
-volumes:
-  logvolume01: {}
+      - "8000:8000"
+      - "8443:8443"
+      - "127.0.0.1:8001:8001"
+      - "127.0.0.1:8444:8444"
+#  server: 
+#    image: "openvidu/openvidu-server-kms:2.17.0"    
+#    ports:
+#      - "4443:4443"
+#    environment:
+#      - "OPENVIDU_SECRET=MY_SECRET"
+#  web:
+#    build: .
+#    ports:
+#      - "5000:5000"
+#    depends_on: 
+#      - server  
+#volumes:
+#  logvolume01: {}

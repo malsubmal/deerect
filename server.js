@@ -72,6 +72,7 @@ app.use(function(req, res, next) {
     next();
   });
 
+  
 // Get token (add new user to session)
 app.post('/api-sessions/get-token', function (req, res) {
     console.log(req);

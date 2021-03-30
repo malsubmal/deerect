@@ -167,7 +167,7 @@ function getToken(callback) {
 	sessionName = $("#sessionName").val(); // Video-call chosen by the user
 
 	history = httpPostRequest(
-		'https://localhost:5000/api-sessions/get-token',
+		'api-sessions/get-token',
 		{sessionName: sessionName},
 		'Request of TOKEN gone WRONG:',
 		(response) => {
@@ -192,6 +192,7 @@ function removeUser() {
 
 function httpPostRequest(url, body, errorMsg, callback) {
 	var http = new XMLHttpRequest();
+	//url = 'http://localhost:8000/' + url;
 	http.open('POST', url, true);
 	//Access-Control-Allow-Origin:
 	http.withCredentials = true;
